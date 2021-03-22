@@ -30,5 +30,52 @@
     position: absolute;
     left: 0;
     top: 50%;
-    
+    transform: translate(0 , -50%)
+}
+.element3{
+    background: papayawhip;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translate(0, -100%);
+}
+.element4{
+    background: papayawhip;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.element5{
+    background: papayawhip;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.element6{
+    background: papayawhip;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+}
+.element7{
+    background: papayawhip;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.element8{
+    background: papayawhip;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.element9{
+    background: papayawhip;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translate(0, -100%);
 }
