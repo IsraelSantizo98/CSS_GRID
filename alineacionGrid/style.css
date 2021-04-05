@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 5px;
+    width: 100%;
+    place-content: start center;
+}
+.child{
+    height: 100px;
+    border: 1px solid black;
+}
+.child:nth-child(1){
+    
+}
+.child:nth-child(2){
+    background: red;
+}
+.child:nth-child(4){
+    background: blue;
+}
+.child:nth-child(6){
+    background: blueviolet;
+}
+.child:nth-child(8){
+    background: lightsalmon;
+}
+.sub-child{
+    /*width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    background: maroon;
+    */
+}

@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.contenedor-padre{
+    display: grid;
+    /**
+    * * Dos columnas con dos filas, se usa 1fr para que tome el todo el tamaño posible homogeneamente
+    */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 5px solid lightsalmon;
+    /*Responsive*/
+    width: 100vw;
+    height: 100vh;
+}
+.contenedor-sub-padre{
+    display: grid;
+    /**
+    * ! Importante no colocar 1fr ya que no se podra reflejar justify contente porque intenta obtener siempre un tamaño homogeneo
+    */
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: repeat(3, 30%);
+    align-items: center;
+    border: 1px solid black;
+}
+.contenedor-sub-padre:nth-child(1){
+    justify-content: space-between;
+}
+.contenedor-sub-padre:nth-child(2){
+    justify-content: space-around;
+}
+.contenedor-sub-padre:nth-child(3){
+    justify-content: space-evenly;
+}
+.contenedor-hijo{
+    /**
+    * * Se usa estas dos cantidades en alto y ancho para que los contenedores hijos sean responsive
+    */
+    height: 75%;
+    width: 100%;
+}
+.crismon{
+    background: crimson;
+}
+.blue{
+    background: lightskyblue
+}
+.green{
+    background: limegreen;
+}

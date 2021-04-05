@@ -1,0 +1,20 @@
+:root{
+    --padre: #791C78;
+    --hijo: #FAC3CD;
+    --sub-hijo: #FFEFDC;
+}
+.container-padre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: var(--padre);
+}
+.hijo{
+    background: var(--hijo);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.sub-hijo{
+    background: var(--sub-hijo);
+}
